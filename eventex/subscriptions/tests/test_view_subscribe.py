@@ -7,16 +7,13 @@ class SubscribeGet(TestCase):
     def setUp(self):
         self.resp = self.client.get('/inscricao/')
 
-
     def test_get(self):
         """Get /inscricao/ must return status code 200"""
         self.assertEqual(200, self.resp.status_code)
 
-
     def test_template(self):
         """Must use subscriptions/subscription_form.html"""
         self.assertTemplateUsed(self.resp, 'subscriptions/subscription_form.html')
-
 
     def test_html(self):
         """FTML must contain input tags"""
@@ -31,20 +28,14 @@ class SubscribeGet(TestCase):
             with self.subTest():
                 self.assertContains(self.resp, text, count)
 
-
-
     def test_csrf(self):
         """Html must contain csrf"""
         self.assertContains(self.resp, 'csrfmiddlewaretoken')
-
 
     def test_has_form(self):
         """Context must have subscription form"""
         form = self.resp.context['form']
         self.assertIsInstance(form, SubscriptionForm)
-
-
-
 
 
 class SubscribePostValid(TestCase):
@@ -59,6 +50,7 @@ class SubscribePostValid(TestCase):
 
     def test_send_subscribe_email(self):
         self.assertEqual(1, len(mail.outbox))
+
 
 class SubscribePostInvalid(TestCase):
     def setUp(self):
