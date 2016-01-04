@@ -6,3 +6,6 @@ install:
   - pip install -q -r requirements.txt
 script:
   - python manage.py test
+addons:
+    code_climate:
+        repo_token: 8bf23a49d5667c7d8fa69c520810a2077dbc856843fcef550d6b509a795ee4b2
