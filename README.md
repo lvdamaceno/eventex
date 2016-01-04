@@ -3,6 +3,9 @@
 Sistema de Eventos encomendado pela Morena
 
 [![Build Status](https://travis-ci.org/lvdamaceno/eventex.svg?branch=master)](https://travis-ci.org/lvdamaceno/eventex)
+[![Code Climate](https://codeclimate.com/repos/5689f7666b58a245c10008fb/badges/b81cd92d990e4ec680c8/gpa.svg)](https://codeclimate.com/repos/5689f7666b58a245c10008fb/feed)
+[![Test Coverage](https://codeclimate.com/repos/5689f7666b58a245c10008fb/badges/b81cd92d990e4ec680c8/coverage.svg)](https://codeclimate.com/repos/5689f7666b58a245c10008fb/coverage)
+[![Issue Count](https://codeclimate.com/repos/5689f7666b58a245c10008fb/badges/b81cd92d990e4ec680c8/issue_count.svg)](https://codeclimate.com/repos/5689f7666b58a245c10008fb/feed)
 
 ## Como desenvolver?
 
